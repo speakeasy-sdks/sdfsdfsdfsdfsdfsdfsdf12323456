@@ -17,8 +17,6 @@ src/sdf/models/shared/error.py
 src/sdf/models/shared/pet.py
 src/sdf/models/shared/__init__.py
 src/sdf/models/errors/__init__.py
-docs/sdks/sdf/README.md
-docs/sdks/pets/README.md
 USAGE.md
 docs/models/operations/createpetsresponse.md
 docs/models/operations/listpetsrequest.md
@@ -27,4 +25,6 @@ docs/models/operations/showpetbyidrequest.md
 docs/models/operations/showpetbyidresponse.md
 docs/models/shared/error.md
 docs/models/shared/pet.md
+docs/sdks/sdf/README.md
+docs/sdks/pets/README.md
 .gitattributes
