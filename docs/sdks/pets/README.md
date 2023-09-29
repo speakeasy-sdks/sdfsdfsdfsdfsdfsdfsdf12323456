@@ -45,7 +45,7 @@ from sdf.models import operations
 s = sdf.Sdf()
 
 req = operations.ListPetsRequest(
-    limit=548814,
+    limit=21453,
 )
 
 res = s.pets.list_pets(req)
@@ -79,7 +79,7 @@ from sdf.models import operations
 s = sdf.Sdf()
 
 req = operations.ShowPetByIDRequest(
-    pet_id='provident',
+    pet_id='South bandwidth male',
 )
 
 res = s.pets.show_pet_by_id(req)
