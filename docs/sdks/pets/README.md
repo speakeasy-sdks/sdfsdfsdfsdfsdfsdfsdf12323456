@@ -79,7 +79,7 @@ from sdf.models import operations
 s = sdf.Sdf()
 
 req = operations.ShowPetByIDRequest(
-    pet_id='Bicycle',
+    pet_id='string',
 )
 
 res = s.pets.show_pet_by_id(req)
