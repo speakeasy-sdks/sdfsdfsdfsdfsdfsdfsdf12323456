@@ -4,7 +4,6 @@
 ```python
 import sdf
 
-
 s = sdf.Sdf()
 
 
