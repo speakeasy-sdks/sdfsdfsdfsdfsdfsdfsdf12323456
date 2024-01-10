@@ -13,18 +13,23 @@ class Pets:
         
     
     
-    def create_pets(self) -> operations.CreatePetsResponse:
+    def create_pets(self, request: shared.Pet) -> operations.CreatePetsResponse:
         r"""Create a pet"""
         base_url = utils.template_url(*self.sdk_configuration.get_server_details())
         
         url = base_url + '/pets'
         headers = {}
+        req_content_type, data, form = utils.serialize_request_body(request, shared.Pet, "request", False, False, 'json')
+        if req_content_type not in ('multipart/form-data', 'multipart/mixed'):
+            headers['content-type'] = req_content_type
+        if data is None and form is None:
+            raise Exception('request body is required')
         headers['Accept'] = 'application/json'
         headers['user-agent'] = self.sdk_configuration.user_agent
         
         client = self.sdk_configuration.client
         
-        http_res = client.request('POST', url, headers=headers)
+        http_res = client.request('POST', url, data=data, files=form, headers=headers)
         content_type = http_res.headers.get('Content-Type')
         
         res = operations.CreatePetsResponse(status_code=http_res.status_code, content_type=content_type, raw_response=http_res)

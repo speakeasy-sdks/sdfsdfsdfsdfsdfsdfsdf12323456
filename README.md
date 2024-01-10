@@ -21,11 +21,16 @@ pip install git+https://github.com/speakeasy-sdks/sdfsdfsdfsdfsdfsdfsdf12323456.
 
 ```python
 import sdf
+from sdf.models import shared
 
 s = sdf.Sdf()
 
+req = shared.Pet(
+    id=596804,
+    name='string',
+)
 
-res = s.pets.create_pets()
+res = s.pets.create_pets(req)
 
 if res.status_code == 200:
     # handle response
@@ -62,13 +67,18 @@ Handling errors in this SDK should largely match your expectations.  All operati
 
 ```python
 import sdf
+from sdf.models import shared
 
 s = sdf.Sdf()
 
+req = shared.Pet(
+    id=596804,
+    name='string',
+)
 
 res = None
 try:
-    res = s.pets.create_pets()
+    res = s.pets.create_pets(req)
 except errors.SDKError as e:
     print(e)  # handle exception
     raise(e)
@@ -96,13 +106,18 @@ You can override the default server globally by passing a server index to the `s
 
 ```python
 import sdf
+from sdf.models import shared
 
 s = sdf.Sdf(
     server_idx=0,
 )
 
+req = shared.Pet(
+    id=596804,
+    name='string',
+)
 
-res = s.pets.create_pets()
+res = s.pets.create_pets(req)
 
 if res.status_code == 200:
     # handle response
@@ -115,13 +130,18 @@ if res.status_code == 200:
 The default server can also be overridden globally by passing a URL to the `server_url: str` optional parameter when initializing the SDK client instance. For example:
 ```python
 import sdf
+from sdf.models import shared
 
 s = sdf.Sdf(
     server_url="http://petstore.swagger.io/v1",
 )
 
+req = shared.Pet(
+    id=596804,
+    name='string',
+)
 
-res = s.pets.create_pets()
+res = s.pets.create_pets(req)
 
 if res.status_code == 200:
     # handle response
