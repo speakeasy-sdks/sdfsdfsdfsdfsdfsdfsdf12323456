@@ -4,15 +4,15 @@ management:
   docChecksum: 1bdb7a6f8bf3995d4b40475228403253
   docVersion: 1.0.0
   speakeasyVersion: internal
-  generationVersion: 2.245.1
-  releaseVersion: 0.8.5
-  configChecksum: ce7590c075992fb76d36a2c46432a100
+  generationVersion: 2.248.1
+  releaseVersion: 0.9.0
+  configChecksum: 2ad7a62ee5592e710176142860b4a69a
   repoURL: https://github.com/speakeasy-sdks/sdfsdfsdfsdfsdfsdfsdf12323456.git
   repoSubDirectory: .
   installationURL: https://github.com/speakeasy-sdks/sdfsdfsdfsdfsdfsdfsdf12323456.git
 features:
   python:
-    core: 4.4.3
+    core: 4.4.4
     globalServerURLs: 2.82.1
 generatedFiles:
   - src/sdf/sdkconfiguration.py
