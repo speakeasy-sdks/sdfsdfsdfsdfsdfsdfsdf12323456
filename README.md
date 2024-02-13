@@ -67,7 +67,7 @@ Handling errors in this SDK should largely match your expectations.  All operati
 
 ```python
 import sdf
-from sdf.models import shared
+from sdf.models import errors, shared
 
 s = sdf.Sdf()
 
@@ -80,7 +80,7 @@ res = None
 try:
     res = s.pets.create_pets(req)
 except errors.SDKError as e:
-    print(e)  # handle exception
+    # handle exception
     raise(e)
 
 if res.status_code == 200:
