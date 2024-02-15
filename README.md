@@ -27,7 +27,7 @@ s = sdf.Sdf()
 
 req = shared.Pet(
     id=596804,
-    name='string',
+    name='<value>',
 )
 
 res = s.pets.create_pets(req)
@@ -73,7 +73,7 @@ s = sdf.Sdf()
 
 req = shared.Pet(
     id=596804,
-    name='string',
+    name='<value>',
 )
 
 res = None
@@ -114,7 +114,7 @@ s = sdf.Sdf(
 
 req = shared.Pet(
     id=596804,
-    name='string',
+    name='<value>',
 )
 
 res = s.pets.create_pets(req)
@@ -138,7 +138,7 @@ s = sdf.Sdf(
 
 req = shared.Pet(
     id=596804,
-    name='string',
+    name='<value>',
 )
 
 res = s.pets.create_pets(req)
