@@ -26,9 +26,10 @@ req = shared.Pet(
 
 res = s.pets.create_pets(req)
 
-if res.status_code == 200:
+if res is not None:
     # handle response
     pass
+
 ```
 
 ### Parameters
@@ -66,6 +67,7 @@ res = s.pets.list_pets(req)
 if res.pets is not None:
     # handle response
     pass
+
 ```
 
 ### Parameters
@@ -105,6 +107,7 @@ res = s.pets.show_pet_by_id(req)
 if res.pet is not None:
     # handle response
     pass
+
 ```
 
 ### Parameters

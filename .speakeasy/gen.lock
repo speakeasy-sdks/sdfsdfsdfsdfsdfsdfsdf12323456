@@ -3,21 +3,23 @@ id: faea1a9a-db96-4b6d-b72f-261b461c52aa
 management:
   docChecksum: 1bdb7a6f8bf3995d4b40475228403253
   docVersion: 1.0.0
-  speakeasyVersion: internal
-  generationVersion: 2.275.4
-  releaseVersion: 0.11.0
-  configChecksum: fa406becd65bb49593299097aa7b14ee
+  speakeasyVersion: 1.204.1
+  generationVersion: 2.279.1
+  releaseVersion: 0.12.0
+  configChecksum: 49e71489b392dad953ec3ca4541eb2a2
   repoURL: https://github.com/speakeasy-sdks/sdfsdfsdfsdfsdfsdfsdf12323456.git
   repoSubDirectory: .
   installationURL: https://github.com/speakeasy-sdks/sdfsdfsdfsdfsdfsdfsdf12323456.git
 features:
   python:
-    core: 4.5.0
+    core: 4.5.1
     globalServerURLs: 2.82.1
+    responseFormat: 0.1.0
 generatedFiles:
   - src/sdf/sdkconfiguration.py
   - src/sdf/pets.py
   - src/sdf/sdk.py
+  - py.typed
   - pylintrc
   - setup.py
   - src/sdf/__init__.py
